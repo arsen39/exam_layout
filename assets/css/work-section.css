@@ -1,0 +1,160 @@
+.how-work-section {
+  width: 100vw;
+  background-color: var(--main-color);
+  text-align: center;
+}
+
+.how-work-header {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  max-width: 100%;
+  margin-bottom: 114px;
+  overflow: visible;
+}
+
+.how-work-header::before {
+  content: "";
+  position: absolute;
+
+  border: #e4e4e4 1px solid;
+
+  right: 0;
+  left: 0;
+  top: 300%;
+}
+
+.account-article,
+.features-article {
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 50px;
+}
+
+.how-work-article-info {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.how-work-article-info-first-header {
+  color: var(--third-text-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.how-work-article-info-second-header {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 57px;
+
+  margin-bottom: 30px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.how-work-article-info-text {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 38px;
+
+  margin-bottom: 30px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.how-work-article-img {
+  object-fit: cover;
+  overflow: hidden;
+  align-self: center;
+
+  box-shadow: 50px 20px 60px 0px rgba(46, 4, 4, 0.15);
+  border-radius: 50px;
+
+  width: 70%;
+}
+
+@media screen and (min-width: 375px) {
+
+  .how-work-article-info-text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .how-work-article-img {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .how-work-header {
+    margin-bottom: 80px;
+  }
+
+  .how-work-header::before {
+    width: 50%;
+
+    left: 25%;
+    top: -200%;
+  }
+
+  .account-article,
+  .features-article {
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    text-align: left;
+  }
+
+  .account-article{
+    flex-flow: row-reverse;
+  }
+
+  .features-article {
+    overflow: hidden;
+  }
+
+  .how-work-article-info-wrapper{
+    width: 60%;
+  }
+
+  .how-work-article-info{
+    justify-content: center;
+  }
+
+  .how-work-article-info-text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .how-work-article-img {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .how-work-article-img{
+    width: 20%;
+  }
+}

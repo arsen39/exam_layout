@@ -1,0 +1,130 @@
+.download-section{
+  height: 564px;
+  background-color: var(--main-text-color);
+  text-align: center;
+}
+
+.download-section-wrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.download-header{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 57px;
+  margin-bottom: 10px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.download-text{
+  color: var(--forth-text-color);
+  font-size: 1.5rem;
+  line-height: 38px;
+
+  margin-bottom: 60px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.download-background{
+  display: none;
+  width: 100%;
+  object-fit: cover;
+}
+
+.download-link-wrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 24%;
+}
+
+.download-link{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+
+  padding: 15px 30px;
+
+  max-width: 60%;
+}
+
+.playstore-link2{
+  background-color: var(--third-text-color);
+}
+
+.appstore-link2{
+  border: 1px white solid;
+}
+
+@media screen and (min-width: 425px) {
+  .download-section{
+    padding: 100px 40px;
+  }
+
+  .download-text{
+    margin-bottom: 20px;
+  }
+
+  .download-link-wrapper{
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+
+  .download-link{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .download-link{
+    max-width: 45%;
+  }
+  
+  .download-link-wrapper{
+    align-self: center;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .download-section{
+    position: relative;
+  }
+
+  .download-text{
+    color: white;
+  }
+
+  .download-link-wrapper{
+    width: 35%;
+  }
+
+  .download-background {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .download-link{
+    max-width: 35%;
+  }
+}

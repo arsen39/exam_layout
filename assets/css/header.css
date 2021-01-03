@@ -9,9 +9,15 @@
   left: 0;
   right: 0;
 
+  width: 100vw;
+
   height: 112px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  background-color: white;
+
+  z-index: 2;
 }
 
 .header-logo{
@@ -20,5 +26,22 @@
 
 .logo-img{
   height: 90%;
+  object-fit: cover;
+}
+
+.header-navbar{
+  height: 100%;
+  max-width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+
+
+.navbar-icon{
+  max-height: 80%;
+  max-width: 100%;
   object-fit: cover;
 }
